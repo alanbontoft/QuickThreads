@@ -78,6 +78,19 @@ ApplicationWindow {
         }
     }
 
+    Text {
+        id: valueLabel
+        x: 191
+        y: 98
+        width: 156
+        height: 50
+        color: "#e80909"
+        text: runner.count
+        font.pointSize: 20
+        verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
+    }
+
     TextField {
         id: countValue
         x: 100

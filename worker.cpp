@@ -16,7 +16,9 @@ void Worker::process() { // Process. Start processing data.
 
     while(!_stopFlag)
     {
-        qDebug() << QString("Count = %1").arg(_count++);
+        qDebug() << QString("Count = %1").arg(_count);
+        emit newCount(_count);
+        _count++;
         QThread::msleep(1000);
     }
     emit finished();

@@ -16,9 +16,11 @@ public:
 public slots:
     void process();
     void stop();
-signals:
+
+Q_SIGNALS:
     void finished();
     void error(QString err);
+    void newCount(int i);
 private:
     // add your variables here
     bool _stopFlag;
