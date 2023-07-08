@@ -4,6 +4,7 @@ Runner::Runner(QObject *parent) : QObject(parent)
 {
     //_thread = new QThread();
     //_worker = new Worker();
+    _worker = nullptr;
 }
 
 Runner::~Runner()
